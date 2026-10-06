@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="converter-card">
+        <h1>Currency Converter</h1>
+
+        <div class="result-box" id="resultBox" aria-live="polite">
+            <p id="resultText">Converted amount will appear here.</p>
+        </div>
+
+        <form id="currencyForm" class="converter-form">
+            <label class="input-group">
+                <span>Amount</span>
+                <input id="amountInput" type="number" min="0" step="0.01" value="100" placeholder="Enter amount">
+            </label>
+
+            <div class="currency-row">
+                <div class="currency-field">
+                    <label for="fromCurrency">From</label>
+                    <div class="select-wrap">
+                        <img class="flag from-flag" src="https://flagsapi.com/US/flat/64.png" alt="US flag">
+                        <select id="fromCurrency" aria-label="Currency to convert from"></select>
+                    </div>
+                </div>
+
+                <button id="swapBtn" class="swap-btn" type="button" aria-label="Swap currencies">↔</button>
+
+                <div class="currency-field">
+                    <label for="toCurrency">To</label>
+                    <div class="select-wrap">
+                        <img class="flag to-flag" src="https://flagsapi.com/IN/flat/64.png" alt="India flag">
+                        <select id="toCurrency" aria-label="Currency to convert to"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rate-row">
+                <p id="rateText">1 USD = 83.12 INR</p>
+                <button id="convertBtn" class="convert-btn" type="submit">Convert</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

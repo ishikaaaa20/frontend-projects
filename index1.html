@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-wrapper">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="msg-container">
+            <p id="msg" class="msg">Player O's turn</p>
+            <div class="button-row">
+                <button id="newbtn" class="action-btn">New Game</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="game" aria-label="Tic Tac Toe board">
+                <button class="box" type="button" aria-label="Cell 1"></button>
+                <button class="box" type="button" aria-label="Cell 2"></button>
+                <button class="box" type="button" aria-label="Cell 3"></button>
+                <button class="box" type="button" aria-label="Cell 4"></button>
+                <button class="box" type="button" aria-label="Cell 5"></button>
+                <button class="box" type="button" aria-label="Cell 6"></button>
+                <button class="box" type="button" aria-label="Cell 7"></button>
+                <button class="box" type="button" aria-label="Cell 8"></button>
+                <button class="box" type="button" aria-label="Cell 9"></button>
+            </div>
+        </div>
+
+        <button id="reset-btn" class="action-btn reset-btn" type="button">Reset Game</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
